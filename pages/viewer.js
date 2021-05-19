@@ -6,7 +6,7 @@ export default function Viewer(props) {
   const [perspective, setPerspective] = React.useState('byName');
   if(!props.editorState){
     return(
-      <div style={style}>
+      <div className={styles.viewer}>
         <div>import first</div>
       </div>
     )
