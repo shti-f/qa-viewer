@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div style={{ backgroundColor: '#404040', color: '#EEFFEE', height: '2rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', paddingLeft: '1rem' }}>
-          <div onClick={() => setIsEditing(!isEditing)}>{ isEditing ? 'to viewer' : 'to editor' }</div>
+          <div style={{ width: '8rem' }} onClick={() => setIsEditing(!isEditing)}>{ isEditing ? 'to viewer' : 'to editor' }</div>
         </div>
         { isEditing ? <Editor editorState={ editorState } setEditorState={ setEditorState } /> : <Viewer editorState={ editorState } /> }
       </main>
